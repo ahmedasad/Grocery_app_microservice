@@ -10,7 +10,6 @@ app.use('/product',proxy("localhost:8003"))
 app.use('/shopping_cart',proxy("localhost:8002"))
 app.use('/auth',proxy("localhost:8001"))
 
-
 app.use('/',(req,res)=>{
     res.send({status:200, message: "gateway is up and running"})
 })

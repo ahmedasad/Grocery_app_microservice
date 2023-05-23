@@ -12,8 +12,8 @@ app.use(express.urlencoded({extended : true}))
 route(app)
 
 
-app.listen(8001,()=>{
-    console.log(`Server running at PORT: ${8001}`);
+app.listen(config.appPort,()=>{
+    console.log(`Server running at PORT: ${config.appPort}`);
 })
 
 }
